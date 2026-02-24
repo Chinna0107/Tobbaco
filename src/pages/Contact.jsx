@@ -25,7 +25,7 @@ function Contact() {
     <div style={{ marginTop: '100px', minHeight: '100vh' }}>
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95))',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.95))',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
         padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
@@ -50,7 +50,7 @@ function Contact() {
           left: '-10%',
           width: '500px',
           height: '500px',
-          background: 'radial-gradient(circle, rgba(102, 126, 234, 0.15), transparent)',
+          background: 'radial-gradient(circle, rgba(139, 69, 19, 0.15), transparent)',
           borderRadius: '50%',
           filter: 'blur(80px)'
         }}></div>
@@ -69,7 +69,7 @@ function Contact() {
             maxWidth: '900px',
             margin: '0 auto',
             lineHeight: '1.8',
-            color: 'rgba(255, 255, 255, 0.9)'
+            color: '#333'
           }}>
             Have questions about our products? Ready to place an order? We're here to help you with all your tobacco needs.
           </p>
@@ -79,7 +79,7 @@ function Contact() {
       {/* Contact Form & Info Section */}
       <section style={{
         padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 1), rgba(22, 33, 62, 1))',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))',
         position: 'relative'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -91,12 +91,12 @@ function Contact() {
           }}>
             {/* Contact Form */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.05)',
+              background: 'rgba(139, 69, 19, 0.05)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
               borderRadius: '20px',
               padding: 'clamp(2rem, 4vw, 3rem)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              border: '1px solid rgba(139, 69, 19, 0.2)',
               boxShadow: '0 8px 32px rgba(0,0,0,0.3), inset 0 0 20px rgba(212, 175, 55, 0.1)',
               display: 'flex',
               flexDirection: 'column'
@@ -119,9 +119,9 @@ function Contact() {
                   style={{
                     padding: 'clamp(0.8rem, 2vw, 1rem)',
                     borderRadius: '15px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    color: '#fff',
+                    border: '1px solid rgba(139, 69, 19, 0.3)',
+                    background: 'rgba(139, 69, 19, 0.05)',
+                    color: '#8B4513',
                     fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                     outline: 'none',
                     transition: 'all 0.3s'
@@ -138,9 +138,9 @@ function Contact() {
                   style={{
                     padding: 'clamp(0.8rem, 2vw, 1rem)',
                     borderRadius: '15px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    color: '#fff',
+                    border: '1px solid rgba(139, 69, 19, 0.3)',
+                    background: 'rgba(139, 69, 19, 0.05)',
+                    color: '#8B4513',
                     fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                     outline: 'none',
                     transition: 'all 0.3s'
@@ -157,9 +157,9 @@ function Contact() {
                     style={{
                       padding: 'clamp(0.8rem, 2vw, 1rem)',
                       borderRadius: '15px',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
-                      background: 'rgba(255, 255, 255, 0.05)',
-                      color: '#fff',
+                      border: '1px solid rgba(139, 69, 19, 0.3)',
+                      background: 'rgba(139, 69, 19, 0.05)',
+                      color: '#8B4513',
                       fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                       outline: 'none',
                       transition: 'all 0.3s'
@@ -175,9 +175,9 @@ function Contact() {
                     style={{
                       padding: 'clamp(0.8rem, 2vw, 1rem)',
                       borderRadius: '15px',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
-                      background: 'rgba(255, 255, 255, 0.05)',
-                      color: '#fff',
+                      border: '1px solid rgba(139, 69, 19, 0.3)',
+                      background: 'rgba(139, 69, 19, 0.05)',
+                      color: '#8B4513',
                       fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                       outline: 'none',
                       transition: 'all 0.3s'
@@ -193,8 +193,8 @@ function Contact() {
                   style={{
                     padding: 'clamp(0.8rem, 2vw, 1rem)',
                     borderRadius: '15px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(139, 69, 19, 0.3)',
+                    background: 'rgba(139, 69, 19, 0.05)',
                     color: formData.subject ? '#fff' : 'rgba(255, 255, 255, 0.5)',
                     fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                     outline: 'none',
@@ -219,9 +219,9 @@ function Contact() {
                   style={{
                     padding: 'clamp(0.8rem, 2vw, 1rem)',
                     borderRadius: '15px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    color: '#fff',
+                    border: '1px solid rgba(139, 69, 19, 0.3)',
+                    background: 'rgba(139, 69, 19, 0.05)',
+                    color: '#8B4513',
                     fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                     outline: 'none',
                     resize: 'vertical',
@@ -249,7 +249,7 @@ function Contact() {
                   style={{
                     padding: 'clamp(0.9rem, 2vw, 1.2rem)',
                     background: 'linear-gradient(135deg, #25D366, #128C7E)',
-                    color: '#fff',
+                    color: '#8B4513',
                     border: 'none',
                     borderRadius: '30px',
                     fontWeight: '700',
@@ -272,12 +272,12 @@ function Contact() {
 
             {/* Contact Information */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.05)',
+              background: 'rgba(139, 69, 19, 0.05)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
               borderRadius: '20px',
               padding: 'clamp(1.5rem, 3vw, 2rem)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              border: '1px solid rgba(139, 69, 19, 0.2)',
               boxShadow: '0 8px 32px rgba(0,0,0,0.3), inset 0 0 20px rgba(212, 175, 55, 0.1)',
               display: 'flex',
               flexDirection: 'column',
@@ -314,7 +314,7 @@ function Contact() {
                   <div style={{ paddingLeft: 'clamp(2.3rem, 5vw, 2.6rem)' }}>
                     {item.info.map((line, j) => (
                       <p key={j} style={{
-                        color: 'rgba(255, 255, 255, 0.9)',
+                        color: '#333',
                         fontSize: 'clamp(0.85rem, 1.8vw, 0.95rem)',
                         margin: '0.2rem 0',
                         lineHeight: '1.5'
@@ -331,7 +331,7 @@ function Contact() {
       {/* FAQ Section */}
       <section style={{
         padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 1), rgba(22, 33, 62, 1))'
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))'
       }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{
@@ -352,11 +352,11 @@ function Contact() {
               { q: 'What certifications do you have?', a: 'We maintain all necessary quality certifications and comply with international tobacco trading standards.' }
             ].map((faq, i) => (
               <div key={i} style={{
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'rgba(139, 69, 19, 0.05)',
                 backdropFilter: 'blur(20px)',
                 borderRadius: '15px',
                 padding: 'clamp(1.5rem, 3vw, 2rem)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
+                border: '1px solid rgba(139, 69, 19, 0.2)',
                 transition: 'all 0.3s'
               }}
               onMouseEnter={(e) => {
@@ -374,7 +374,7 @@ function Contact() {
                   color: '#d4af37'
                 }}>❓ {faq.q}</h3>
                 <p style={{
-                  color: 'rgba(255, 255, 255, 0.8)',
+                  color: '#555',
                   lineHeight: '1.6',
                   fontSize: 'clamp(0.9rem, 2vw, 1rem)'
                 }}>{faq.a}</p>
@@ -387,7 +387,7 @@ function Contact() {
       {/* Social Media & Map Section */}
       <section style={{
         padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 1), rgba(22, 33, 62, 1))'
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{
@@ -415,11 +415,11 @@ function Contact() {
               { name: 'Phone', icon: '📞', color: '#4CAF50' }
             ].map((social, i) => (
               <div key={i} style={{
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'rgba(139, 69, 19, 0.05)',
                 backdropFilter: 'blur(20px)',
                 padding: 'clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2rem)',
                 borderRadius: '15px',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
+                border: '1px solid rgba(139, 69, 19, 0.2)',
                 cursor: 'pointer',
                 transition: 'all 0.3s',
                 textAlign: 'center',
@@ -436,18 +436,18 @@ function Contact() {
                 e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)'
               }}>
                 <div style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '0.5rem' }}>{social.icon}</div>
-                <div style={{ color: '#fff', fontSize: 'clamp(0.9rem, 2vw, 1rem)', fontWeight: '600' }}>{social.name}</div>
+                <div style={{ color: '#8B4513', fontSize: 'clamp(0.9rem, 2vw, 1rem)', fontWeight: '600' }}>{social.name}</div>
               </div>
             ))}
           </div>
 
           {/* Map Placeholder */}
           <div style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'rgba(139, 69, 19, 0.05)',
             backdropFilter: 'blur(20px)',
             borderRadius: '20px',
             padding: 'clamp(2rem, 4vw, 3rem)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(139, 69, 19, 0.2)',
             textAlign: 'center'
           }}>
             <div style={{
@@ -463,7 +463,7 @@ function Contact() {
                 marginBottom: '0.5rem',
                 color: '#d4af37'
               }}>Our Location</h3>
-              <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
+              <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
                 Guntur - 522001, Andhra Pradesh, India
               </p>
             </div>

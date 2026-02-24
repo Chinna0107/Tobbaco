@@ -1,0 +1,25 @@
+:root {
+  /* Enhanced Tobacco Brown Theme with White BG */
+  --tobacco-brown: #8B4513;
+  --dark-brown: #654321;
+  --light-brown: #A0826D;
+  --tobacco-green: #2E7D32;
+  --light-green: #4CAF50;
+  --dark-green: #1B5E20;
+  --gold: #DAA520;
+  --cream: #F5DEB3;
+  --tan: #D2B48C;
+  --bg-white: #FFFFFF;
+  --bg-light: #FAFAFA;
+  --bg-warm: #F5F5F5;
+}
+
+body {
+  background: #FFFFFF;
+  color: #333;
+}
+
+.app {
+  background: #FFFFFF;
+  min-height: 100vh;
+}

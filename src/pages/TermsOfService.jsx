@@ -1,13 +1,13 @@
 function TermsOfService() {
   return (
-    <div style={{ marginTop: '100px', background: 'linear-gradient(135deg, rgba(26, 26, 46, 1), rgba(22, 33, 62, 1))', minHeight: '100vh', padding: '3rem 1rem' }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto', background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderRadius: '20px', padding: 'clamp(2rem, 5vw, 3rem)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
+    <div style={{ marginTop: '100px', background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))', minHeight: '100vh', padding: '3rem 1rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto', background: 'rgba(139, 69, 19, 0.05)', backdropFilter: 'blur(20px)', borderRadius: '20px', padding: 'clamp(2rem, 5vw, 3rem)', border: '1px solid rgba(139, 69, 19, 0.2)' }}>
         
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', fontWeight: 'bold', marginBottom: '1rem', background: 'linear-gradient(135deg, #d4af37, #f4d03f)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center' }}>Terms of Service</h1>
         
-        <p style={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.7)', marginBottom: '2rem', fontSize: '0.95rem' }}>Last Updated: January 22, 2025</p>
+        <p style={{ textAlign: 'center', color: '#666', marginBottom: '2rem', fontSize: '0.95rem' }}>Last Updated: January 22, 2025</p>
 
-        <div style={{ color: 'rgba(255, 255, 255, 0.9)', lineHeight: '1.8', fontSize: 'clamp(0.95rem, 2vw, 1.05rem)' }}>
+        <div style={{ color: '#333', lineHeight: '1.8', fontSize: 'clamp(0.95rem, 2vw, 1.05rem)' }}>
           
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>1. Introduction and Acceptance</h2>

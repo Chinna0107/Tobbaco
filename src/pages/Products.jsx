@@ -71,9 +71,9 @@ function Products() {
 
   return (
     <div style={{ marginTop: '120px', minHeight: '100vh' }}>
-      {/* Hero Section */}
+      {/* Hero Section
       <section style={{
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95))',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.95))',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
         padding: '5rem 2rem',
@@ -81,7 +81,7 @@ function Products() {
         color: 'white',
         position: 'relative',
         overflow: 'hidden',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(139, 69, 19, 0.2)',
         boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
       }}>
         <div style={{
@@ -100,36 +100,38 @@ function Products() {
           left: '-10%',
           width: '500px',
           height: '500px',
-          background: 'radial-gradient(circle, rgba(102, 126, 234, 0.15), transparent)',
+          background: 'radial-gradient(circle, rgba(139, 69, 19, 0.15), transparent)',
           borderRadius: '50%',
           filter: 'blur(80px)'
         }}></div>
         <div style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{
             fontSize: '3.5rem',
-            fontWeight: 'bold',
+            fontWeight: '900',
             marginBottom: '1.5rem',
-            background: 'linear-gradient(135deg, #fff, #d4af37)',
+            background: 'linear-gradient(135deg, #8B4513 0%, #d4af37 50%, #f4d03f 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            textShadow: '0 4px 20px rgba(212, 175, 55, 0.3)'
+            textShadow: '0 4px 20px rgba(212, 175, 55, 0.5)',
+            letterSpacing: '-1px'
           }}>Premium Tobacco Products</h1>
           <p style={{
-            fontSize: '1.3rem',
+            fontSize: '1.4rem',
             maxWidth: '900px',
             margin: '0 auto',
-            lineHeight: '1.8',
-            color: 'rgba(255, 255, 255, 0.9)'
+            lineHeight: '1.9',
+            color: '#654321',
+            fontWeight: '500'
           }}>
             Discover our superior quality tobacco products, including Flue Cured Virginia Tobacco, Traditional Burley Tobacco, and specialty tobacco varieties.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Products Section */}
       <section style={{ 
         padding: '4rem 2rem', 
-        background: 'linear-gradient(135deg, rgba(26, 26, 46, 1), rgba(22, 33, 62, 1))',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))',
         position: 'relative',
         overflow: 'hidden'
       }}>
@@ -163,9 +165,9 @@ function Products() {
                   background: selectedCategory === cat 
                     ? 'linear-gradient(135deg, #d4af37, #f4d03f)' 
                     : 'rgba(255, 255, 255, 0.1)',
-                  color: selectedCategory === cat ? '#000' : '#fff',
+                  color: selectedCategory === cat ? '#000' : '#8B4513',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  border: '1px solid rgba(139, 69, 19, 0.3)',
                   fontWeight: '700',
                   cursor: 'pointer',
                   boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
@@ -191,10 +193,10 @@ function Products() {
               margin: '0 auto 3rem',
               display: 'block',
               borderRadius: '30px',
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'rgba(139, 69, 19, 0.08)',
               backdropFilter: 'blur(10px)',
-              color: '#fff',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              color: '#8B4513',
+              border: '1px solid rgba(139, 69, 19, 0.3)',
               fontSize: '1rem',
               boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
             }} 
@@ -208,12 +210,12 @@ function Products() {
           }}>
             {filteredProducts.map((product, i) => (
               <div key={i} style={{
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: 'rgba(139, 69, 19, 0.05)',
                 backdropFilter: 'blur(20px)',
                 WebkitBackdropFilter: 'blur(20px)',
                 borderRadius: '20px',
                 overflow: 'hidden',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
+                border: '1px solid rgba(139, 69, 19, 0.2)',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.3), inset 0 0 20px rgba(212, 175, 55, 0.1)',
                 transition: 'transform 0.3s, box-shadow 0.3s, border 0.3s',
                 cursor: 'pointer',
@@ -248,7 +250,7 @@ function Products() {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3))'
+                    background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.3), rgba(101, 67, 33, 0.3))'
                   }}></div>
                 </div>
                 
@@ -260,34 +262,37 @@ function Products() {
                 }}>
                   <div style={{
                     display: 'inline-block',
-                    padding: '0.4rem 1.2rem',
-                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                    color: '#fff',
+                    padding: '0.5rem 1.3rem',
+                    background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.15), rgba(212, 175, 55, 0.15))',
+                    color: '#8B4513',
                     borderRadius: '20px',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
+                    fontSize: '0.85rem',
+                    fontWeight: '700',
                     marginBottom: '1rem',
-                    alignSelf: 'flex-start'
+                    alignSelf: 'flex-start',
+                    border: '1px solid rgba(139, 69, 19, 0.3)'
                   }}>
                     {product.category}
                   </div>
                   
                   <h3 style={{ 
-                    fontSize: '1.3rem', 
-                    fontWeight: 'bold', 
+                    fontSize: '1.4rem', 
+                    fontWeight: '800', 
                     marginBottom: '0.8rem',
-                    background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
+                    background: 'linear-gradient(135deg, #8B4513 0%, #d4af37 100%)',
                     WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent'
+                    WebkitTextFillColor: 'transparent',
+                    letterSpacing: '-0.5px'
                   }}>
                     {product.name}
                   </h3>
                   
                   <p style={{ 
-                    color: 'rgba(255, 255, 255, 0.8)', 
+                    color: '#654321', 
                     marginBottom: 'auto',
-                    lineHeight: '1.6',
-                    fontSize: '0.9rem',
+                    lineHeight: '1.7',
+                    fontSize: '0.95rem',
+                    fontWeight: '400',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     display: '-webkit-box',
@@ -305,11 +310,11 @@ function Products() {
                     paddingTop: '1rem',
                     borderTop: '1px solid #eee'
                   }}>
-                    <div style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.7)' }}>
-                      <strong>💊 Nicotine:</strong><br/>{product.nicotine}
+                    <div style={{ fontSize: '0.85rem', color: '#8B4513' }}>
+                      <strong style={{ color: '#654321', fontWeight: '700' }}>💊 Nicotine:</strong><br/>{product.nicotine}
                     </div>
-                    <div style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.7)', textAlign: 'right' }}>
-                      <strong>📅 Marketing:</strong><br/>{product.marketing}
+                    <div style={{ fontSize: '0.85rem', color: '#8B4513', textAlign: 'right' }}>
+                      <strong style={{ color: '#654321', fontWeight: '700' }}>📅 Marketing:</strong><br/>{product.marketing}
                     </div>
                   </div>
                   
@@ -381,20 +386,21 @@ function Products() {
             <div style={{ padding: '2rem' }}>
               <div style={{
                 display: 'inline-block',
-                padding: '0.5rem 1.5rem',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                color: '#fff',
+                padding: '0.6rem 1.6rem',
+                background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.15), rgba(212, 175, 55, 0.15))',
+                color: '#8B4513',
                 borderRadius: '20px',
-                fontSize: '0.9rem',
-                fontWeight: '600',
-                marginBottom: '1rem'
+                fontSize: '0.95rem',
+                fontWeight: '700',
+                marginBottom: '1rem',
+                border: '1px solid rgba(139, 69, 19, 0.3)'
               }}>
                 {selectedProduct.category}
               </div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '1rem', color: '#333' }}>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1rem', color: '#8B4513', letterSpacing: '-0.5px' }}>
                 {selectedProduct.name}
               </h2>
-              <p style={{ fontSize: '1rem', lineHeight: '1.8', color: '#666', marginBottom: '1.5rem' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: '1.9', color: '#654321', marginBottom: '1.5rem', fontWeight: '400' }}>
                 {selectedProduct.fullDesc}
               </p>
               <div style={{
@@ -405,12 +411,12 @@ function Products() {
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                   <div>
-                    <strong>💊 Nicotine Content:</strong>
-                    <p style={{ margin: '0.5rem 0 0 0', color: '#666' }}>{selectedProduct.nicotine}</p>
+                    <strong style={{ color: '#8B4513', fontWeight: '700', fontSize: '1rem' }}>💊 Nicotine Content:</strong>
+                    <p style={{ margin: '0.5rem 0 0 0', color: '#654321', fontWeight: '500' }}>{selectedProduct.nicotine}</p>
                   </div>
                   <div style={{ textAlign: 'right' }}>
-                    <strong>📅 Marketing Period:</strong>
-                    <p style={{ margin: '0.5rem 0 0 0', color: '#666' }}>{selectedProduct.marketing}</p>
+                    <strong style={{ color: '#8B4513', fontWeight: '700', fontSize: '1rem' }}>📅 Marketing Period:</strong>
+                    <p style={{ margin: '0.5rem 0 0 0', color: '#654321', fontWeight: '500' }}>{selectedProduct.marketing}</p>
                   </div>
                 </div>
               </div>
@@ -419,7 +425,7 @@ function Products() {
                   flex: 1,
                   padding: '1rem',
                   background: '#fff',
-                  color: '#333',
+                  color: '#8B4513',
                   border: '2px solid #ddd',
                   borderRadius: '30px',
                   fontWeight: '700',

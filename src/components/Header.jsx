@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <nav style={{
-      background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 240, 255, 0.9) 100%)',
+      background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.95) 0%, rgba(101, 67, 33, 0.95) 100%)',
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
       padding: '1rem 0',
@@ -32,8 +32,8 @@ function Header() {
       width: '100%',
       top: 0,
       zIndex: 1000,
-      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
-      border: '1px solid rgba(102, 126, 234, 0.2)'
+      boxShadow: '0 8px 32px rgba(139, 69, 19, 0.3)',
+      border: '1px solid rgba(218, 165, 32, 0.2)'
     }}>
       <div style={{
         maxWidth: '1400px',
@@ -60,14 +60,14 @@ function Header() {
             width: '60px',
             height: '60px',
             borderRadius: '50%',
-            border: '3px solid rgba(102, 126, 234, 0.5)',
-            boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)',
+            border: '3px solid rgba(218, 165, 32, 0.5)',
+            boxShadow: '0 4px 15px rgba(218, 165, 32, 0.3)',
             objectFit: 'cover'
           }} />
           <h1 style={{
             fontSize: '1.4rem',
             fontWeight: 'bold',
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            background: 'linear-gradient(135deg, #DAA520 0%, #F5DEB3 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             margin: 0
@@ -85,14 +85,14 @@ function Header() {
             alignItems: 'center'
           }}>
             <Link to="/" style={{
-              color: '#333',
+              color: '#f1eeec',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#667eea'
+              e.target.style.color = '#8B4513'
               e.target.querySelector('.underline').style.width = '100%'
             }} onMouseLeave={(e) => {
               e.target.style.color = '#333'
@@ -105,7 +105,7 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                background: 'linear-gradient(135deg, #8B4513, #654321)',
                 transition: 'width 0.3s ease'
               }}></span>
             </Link>
@@ -113,7 +113,7 @@ function Header() {
               e.preventDefault()
               handleNavigation('/#about')
             }} style={{
-              color: '#333',
+              color: '#e7e3e0',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
@@ -121,10 +121,10 @@ function Header() {
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#667eea'
+              e.target.style.color = '#DAA520'
               e.target.querySelector('.underline').style.width = '100%'
             }} onMouseLeave={(e) => {
-              e.target.style.color = '#333'
+              e.target.style.color = '#F5DEB3'
               e.target.querySelector('.underline').style.width = '0%'
             }}>
               About
@@ -134,7 +134,7 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
                 transition: 'width 0.3s ease'
               }}></span>
             </a>
@@ -142,7 +142,7 @@ function Header() {
               e.preventDefault()
               handleNavigation('/#products')
             }} style={{
-              color: '#333',
+              color: '#f4f0ed',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
@@ -150,10 +150,10 @@ function Header() {
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#667eea'
+              e.target.style.color = '#DAA520'
               e.target.querySelector('.underline').style.width = '100%'
             }} onMouseLeave={(e) => {
-              e.target.style.color = '#333'
+              e.target.style.color = '#F5DEB3'
               e.target.querySelector('.underline').style.width = '0%'
             }}>
               Products
@@ -163,7 +163,7 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
                 transition: 'width 0.3s ease'
               }}></span>
             </a>
@@ -171,7 +171,7 @@ function Header() {
               e.preventDefault()
               handleNavigation('/#team')
             }} style={{
-              color: '#333',
+              color: '#eae6e3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
@@ -179,10 +179,10 @@ function Header() {
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#667eea'
+              e.target.style.color = '#DAA520'
               e.target.querySelector('.underline').style.width = '100%'
             }} onMouseLeave={(e) => {
-              e.target.style.color = '#333'
+              e.target.style.color = '#F5DEB3'
               e.target.querySelector('.underline').style.width = '0%'
             }}>
               Team
@@ -192,7 +192,7 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
                 transition: 'width 0.3s ease'
               }}></span>
             </a>
@@ -200,7 +200,7 @@ function Header() {
               e.preventDefault()
               handleNavigation('/#testimonials')
             }} style={{
-              color: '#333',
+              color: '#f1eae5',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
@@ -208,10 +208,10 @@ function Header() {
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#667eea'
+              e.target.style.color = '#DAA520'
               e.target.querySelector('.underline').style.width = '100%'
             }} onMouseLeave={(e) => {
-              e.target.style.color = '#333'
+              e.target.style.color = '#F5DEB3'
               e.target.querySelector('.underline').style.width = '0%'
             }}>
               Testimonials
@@ -221,7 +221,7 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                background: 'linear-gradient(135deg, #8B4513, #654321)',
                 transition: 'width 0.3s ease'
               }}></span>
             </a>
@@ -253,7 +253,7 @@ function Header() {
           <button style={{
             background: 'transparent',
             border: 'none',
-            color: '#333',
+            color: '#f8f4f1',
             fontSize: '1.8rem',
             cursor: 'pointer',
             padding: '0.5rem',
@@ -272,11 +272,11 @@ function Header() {
             top: '100%',
             right: '2rem',
             marginTop: '0.5rem',
-            background: 'linear-gradient(135deg, rgba(26, 26, 46, 0.98), rgba(22, 33, 62, 0.98))',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 250, 250, 0.98))',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(102, 126, 234, 0.3)',
+            border: '1px solid rgba(139, 69, 19, 0.3)',
             borderRadius: '15px',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+            boxShadow: '0 8px 32px rgba(139, 69, 19, 0.15)',
             minWidth: '200px',
             overflow: 'hidden'
           }}>
@@ -286,7 +286,7 @@ function Header() {
             }}>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
@@ -305,18 +305,18 @@ function Header() {
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#f9f1ed',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
               }} onClick={() => handleNavigation('/#about')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(205, 40, 40, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 About
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
@@ -327,7 +327,7 @@ function Header() {
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
@@ -338,7 +338,7 @@ function Header() {
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
@@ -349,7 +349,7 @@ function Header() {
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#fff',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'

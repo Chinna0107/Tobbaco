@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import './App.css'
+import './tobacco-theme.css'
 
 function App() {
   return (
