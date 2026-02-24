@@ -42,9 +42,7 @@ function Home() {
             fontWeight: 'bold',
             marginBottom: '1rem',
             textShadow: '2px 2px 8px rgba(0,0,0,0.5)',
-            background: 'linear-gradient(135deg, #fff, #d4af37)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
+            color: '#FFD700'
           }}>Pammi Tobacco</h1>
           
           <h2 className="hero-subtitle" style={{
@@ -86,14 +84,14 @@ function Home() {
             }}>Get Quote Now</Link>
             
             <Link to="/products" style={{
-              background: 'rgba(255, 255, 255, 0.2)',
+              background: 'rgba(255, 215, 0, 0.3)',
               backdropFilter: 'blur(10px)',
-              color: '#8B4513',
+              color: '#FFD700',
               padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem)',
               borderRadius: '30px',
               fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
               fontWeight: '700',
-              border: '2px solid rgba(255, 255, 255, 0.3)',
+              border: '2px solid #FFD700',
               textDecoration: 'none',
               whiteSpace: 'nowrap'
             }}>View Products</Link>
