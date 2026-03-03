@@ -226,22 +226,22 @@ function Home() {
             <h3 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.2rem)', fontWeight: '800', marginBottom: 'clamp(2rem, 4vw, 3rem)', textAlign: 'center', background: 'linear-gradient(135deg, #8B4513, #d4af37)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Why Choose PTC?</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'clamp(1.5rem, 3vw, 2rem)' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <img src={screenshot} alt="Quality" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
+                <img src="https://venkatasaitobacco.com/assets/images/leaf/02.jpg" alt="Quality" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
                 <h4 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.3rem)', fontWeight: '800', color: '#8B4513', marginBottom: '0.5rem' }}>Premium Quality</h4>
                 <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', color: '#654321', lineHeight: '1.6', fontWeight: '400' }}>High-grade tobacco meeting international standards</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <img src={logo} alt="Global" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
+                <img src="https://venkatasaitobacco.com/assets/images/leaf/01.jpg" alt="Global" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
                 <h4 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.3rem)', fontWeight: '800', color: '#8B4513', marginBottom: '0.5rem' }}>Global Reach</h4>
                 <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', color: '#654321', lineHeight: '1.6', fontWeight: '400' }}>Export to 50+ countries with seamless logistics</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <img src={screenshot} alt="Customer" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
+                <img src="https://venkatasaitobacco.com/assets/images/leaf/03.jpg" alt="Customer" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
                 <h4 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.3rem)', fontWeight: '800', color: '#8B4513', marginBottom: '0.5rem' }}>Customer-Centric</h4>
                 <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', color: '#654321', lineHeight: '1.6', fontWeight: '400' }}>Tailored solutions for specific requirements</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <img src={logo} alt="Expert" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
+                <img src="https://venkatasaitobacco.com/assets/images/leaf/04.jpg" alt="Expert" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
                 <h4 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.3rem)', fontWeight: '800', color: '#8B4513', marginBottom: '0.5rem' }}>Experienced Leadership</h4>
                 <p style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', color: '#654321', lineHeight: '1.6', fontWeight: '400' }}>Decades of expertise under Sankaraiah Nadendla</p>
               </div>

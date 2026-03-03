@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedProduct, setSelectedProduct] = useState(null)
   const navigate = useNavigate()
 
   const products = [
@@ -63,6 +62,8 @@ function Products() {
       image: 'https://www.sopariwala.com/wp-content/uploads/2024/12/BLACK-CHOPADIA-TOBACCO-THUMBNAIL-new-copy.jpg'
     }
   ]
+
+  const [selectedProduct, setSelectedProduct] = useState(products[0])
 
   const filteredProducts = products.filter(p => 
     (selectedCategory === 'All' || p.category === selectedCategory) &&
@@ -202,141 +203,105 @@ function Products() {
             }} 
           />
           
-          {/* Products Grid */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '2rem'
-          }}>
-            {filteredProducts.map((product, i) => (
-              <div key={i} style={{
-                background: 'rgba(139, 69, 19, 0.05)',
-                backdropFilter: 'blur(20px)',
-                WebkitBackdropFilter: 'blur(20px)',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                border: '1px solid rgba(139, 69, 19, 0.2)',
-                boxShadow: '0 8px 32px rgba(0,0,0,0.3), inset 0 0 20px rgba(212, 175, 55, 0.1)',
-                transition: 'transform 0.3s, box-shadow 0.3s, border 0.3s',
-                cursor: 'pointer',
-                height: '550px',
-                display: 'flex',
-                flexDirection: 'column',
-                position: 'relative'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-10px)'
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.4), 0 0 40px rgba(212, 175, 55, 0.4), inset 0 0 30px rgba(212, 175, 55, 0.2)'
-                e.currentTarget.style.border = '1px solid rgba(212, 175, 55, 0.6)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3), inset 0 0 20px rgba(212, 175, 55, 0.1)'
-                e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)'
-              }}>
+          {/* Products Layout - Left List, Right Details */}
+          <div style={{ display: 'grid', gridTemplateColumns: window.innerWidth > 768 ? '300px 1fr' : '1fr', gap: '2.5rem', alignItems: 'start' }}>
+            {/* Left Side - Products List */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', position: 'sticky', top: '140px', alignSelf: 'start' }}>
+              {filteredProducts.map((product, i) => (
+                <div key={i} onClick={() => setSelectedProduct(product)} style={{
+                  background: selectedProduct?.name === product.name ? 'rgba(212, 175, 55, 0.15)' : 'rgba(139, 69, 19, 0.05)',
+                  padding: '1.2rem 1.5rem',
+                  borderRadius: '12px',
+                  border: selectedProduct?.name === product.name ? '2px solid #d4af37' : '1px solid rgba(139, 69, 19, 0.2)',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s'
+                }}
+                onMouseEnter={(e) => {
+                  if (selectedProduct?.name !== product.name) {
+                    e.currentTarget.style.background = 'rgba(139, 69, 19, 0.1)'
+                    e.currentTarget.style.border = '1px solid rgba(212, 175, 55, 0.4)'
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (selectedProduct?.name !== product.name) {
+                    e.currentTarget.style.background = 'rgba(139, 69, 19, 0.05)'
+                    e.currentTarget.style.border = '1px solid rgba(139, 69, 19, 0.2)'
+                  }
+                }}>
+                  <h3 style={{ fontSize: '0.95rem', fontWeight: '600', color: '#8B4513', lineHeight: '1.4' }}>{product.name}</h3>
+                </div>
+              ))}
+            </div>
+
+            {/* Right Side - Product Details */}
+            {selectedProduct && (
+              <div style={{ maxHeight: '80vh', overflowY: 'auto' }}>
                 <div style={{
-                  height: '200px',
-                  overflow: 'hidden',
-                  position: 'relative'
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 0.9))',
+                  borderRadius: '25px',
+                  padding: '2.5rem',
+                  border: '1px solid rgba(139, 69, 19, 0.15)',
+                  boxShadow: '0 12px 40px rgba(139, 69, 19, 0.15)',
+                  marginBottom: '2rem'
                 }}>
-                  <img src={product.image} alt={product.name} className="product-image" style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }} />
-                  <div style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.3), rgba(101, 67, 33, 0.3))'
-                  }}></div>
-                </div>
-                
-                <div style={{ 
-                  padding: '1.5rem',
-                  flex: 1,
-                  display: 'flex',
-                  flexDirection: 'column'
+                <img src={selectedProduct.image} alt={selectedProduct.name} style={{
+                  width: '100%',
+                  height: '350px',
+                  objectFit: 'cover',
+                  borderRadius: '20px',
+                  marginBottom: '2rem',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.15)'
+                }} />
+                <div style={{
+                  display: 'inline-block',
+                  padding: '0.6rem 1.5rem',
+                  background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
+                  color: '#000',
+                  borderRadius: '20px',
+                  fontSize: '0.9rem',
+                  fontWeight: '700',
+                  marginBottom: '1rem'
+                }}>{selectedProduct.category}</div>
+                <h2 style={{ fontSize: '2.2rem', fontWeight: '800', color: '#8B4513', marginBottom: '1rem', lineHeight: '1.3' }}>{selectedProduct.name}</h2>
+                <p style={{ fontSize: '1.08rem', lineHeight: '1.9', color: '#555', marginBottom: '2.5rem', textAlign: 'justify' }}>{selectedProduct.fullDesc}</p>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr',
+                  gap: '1.5rem',
+                  background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.08), rgba(212, 175, 55, 0.08))',
+                  padding: '2rem',
+                  borderRadius: '18px',
+                  marginBottom: '2rem',
+                  border: '1px solid rgba(139, 69, 19, 0.15)'
                 }}>
-                  <div style={{
-                    display: 'inline-block',
-                    padding: '0.5rem 1.3rem',
-                    background: 'linear-gradient(135deg, rgba(139, 69, 19, 0.15), rgba(212, 175, 55, 0.15))',
-                    color: '#8B4513',
-                    borderRadius: '20px',
-                    fontSize: '0.85rem',
-                    fontWeight: '700',
-                    marginBottom: '1rem',
-                    alignSelf: 'flex-start',
-                    border: '1px solid rgba(139, 69, 19, 0.3)'
-                  }}>
-                    {product.category}
+                  <div>
+                    <strong style={{ color: '#8B4513', fontSize: '0.9rem' }}>💊 Nicotine Content</strong>
+                    <p style={{ margin: '0.5rem 0 0 0', color: '#333', fontWeight: '600' }}>{selectedProduct.nicotine}</p>
                   </div>
-                  
-                  <h3 style={{ 
-                    fontSize: '1.4rem', 
-                    fontWeight: '800', 
-                    marginBottom: '0.8rem',
-                    background: 'linear-gradient(135deg, #8B4513 0%, #d4af37 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    letterSpacing: '-0.5px'
-                  }}>
-                    {product.name}
-                  </h3>
-                  
-                  <p style={{ 
-                    color: '#654321', 
-                    marginBottom: 'auto',
-                    lineHeight: '1.7',
-                    fontSize: '0.95rem',
-                    fontWeight: '400',
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    display: '-webkit-box',
-                    WebkitLineClamp: 3,
-                    WebkitBoxOrient: 'vertical'
-                  }}>
-                    {product.desc}
-                  </p>
-                  
-                  <div style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    marginTop: '1rem',
-                    paddingTop: '1rem',
-                    borderTop: '1px solid #eee'
-                  }}>
-                    <div style={{ fontSize: '0.85rem', color: '#8B4513' }}>
-                      <strong style={{ color: '#654321', fontWeight: '700' }}>💊 Nicotine:</strong><br/>{product.nicotine}
-                    </div>
-                    <div style={{ fontSize: '0.85rem', color: '#8B4513', textAlign: 'right' }}>
-                      <strong style={{ color: '#654321', fontWeight: '700' }}>📅 Marketing:</strong><br/>{product.marketing}
-                    </div>
+                  <div>
+                    <strong style={{ color: '#8B4513', fontSize: '0.9rem' }}>📅 Marketing Period</strong>
+                    <p style={{ margin: '0.5rem 0 0 0', color: '#333', fontWeight: '600' }}>{selectedProduct.marketing}</p>
                   </div>
-                  
-                  <button onClick={() => setSelectedProduct(product)} className="learn-more-btn" style={{
-                    width: '100%',
-                    padding: '0.9rem',
-                    background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
-                    color: '#000',
-                    border: 'none',
-                    borderRadius: '30px',
-                    fontWeight: '700',
-                    fontSize: '0.95rem',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s',
-                    boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
-                    marginTop: '1rem'
-                  }}>
-                    Learn More →
-                  </button>
                 </div>
+                <button onClick={() => navigate('/contact')} style={{
+                  width: '100%',
+                  padding: '1rem',
+                  background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
+                  color: '#000',
+                  border: 'none',
+                  borderRadius: '30px',
+                  fontWeight: '700',
+                  fontSize: '1.05rem',
+                  cursor: 'pointer',
+                  boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
+                  transition: 'transform 0.3s'
+                }}
+                onMouseEnter={(e) => e.target.style.transform = 'scale(1.02)'}
+                onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                >Request Quote →</button>
               </div>
-            ))}
+            </div>
+            )}
           </div>
 
           {filteredProducts.length === 0 && (
@@ -351,8 +316,47 @@ function Products() {
         </div>
       </section>
 
+      {/* India Tobacco Info Section */}
+      <section style={{
+        padding: '4rem 2rem',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))'
+      }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 0.9))',
+            borderRadius: '25px',
+            padding: '3rem',
+            border: '1px solid rgba(139, 69, 19, 0.15)',
+            boxShadow: '0 12px 40px rgba(139, 69, 19, 0.15)',
+            display: 'grid',
+            gridTemplateColumns: window.innerWidth > 768 ? '1.5fr 1fr' : '1fr',
+            gap: '3rem',
+            alignItems: 'center'
+          }}>
+            <div>
+              <h3 style={{ fontSize: '2rem', fontWeight: '800', color: '#8B4513', marginBottom: '1.5rem' }}>India's Tobacco Industry</h3>
+              <p style={{ fontSize: '1.08rem', lineHeight: '1.9', color: '#555', marginBottom: '1.2rem', textAlign: 'justify' }}>
+                With an annual production of roughly 800 million kgs, India is the second-largest producer and third-largest exporter of tobacco in the world. This product is valued for its full-bodied flavour and smoothness. Of this, 300 million Kgs. are produced as FCV tobacco, the primary exportable variety of tobacco grown in the states of Andhra Pradesh and Karnataka.
+              </p>
+              <p style={{ fontSize: '1.08rem', lineHeight: '1.9', color: '#555', textAlign: 'justify' }}>
+                There are further sorts of chewing tobacco, cigar-wrapper, Oriental, Traditional Burley (HDBRG), Dark fire cured, FCV Rustica, Bidi, Hookah tobacco, and Cheroot.
+              </p>
+            </div>
+            <div>
+              <img src="https://www.sopariwala.com/wp-content/uploads/2024/12/BLACK-CHOPADIA-TOBACCO-THUMBNAIL-new-copy.jpg" alt="Tobacco" style={{
+                width: '100%',
+                height: '350px',
+                objectFit: 'cover',
+                borderRadius: '20px',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.15)'
+              }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Modal */}
-      {selectedProduct && (
+      {false && selectedProduct && (
         <div style={{
           position: 'fixed',
           top: 0,

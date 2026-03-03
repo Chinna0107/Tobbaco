@@ -33,7 +33,7 @@ function Team() {
   ]
 
   return (
-    <div style={{ marginTop: '100px', background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))', minHeight: '100vh', padding: '3rem 1rem' }}>
+    <div style={{ marginTop: '100px', background: '#ffffff', minHeight: '100vh', padding: '3rem 1rem' }}>
       {/* Header Section */}
       <div style={{ maxWidth: '1200px', margin: '0 auto', marginBottom: '4rem', textAlign: 'center' }}>
         <h1 style={{

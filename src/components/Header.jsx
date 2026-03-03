@@ -85,18 +85,20 @@ function Header() {
             alignItems: 'center'
           }}>
             <Link to="/" style={{
-              color: '#f1eeec',
+              color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
-              e.target.style.color = '#8B4513'
-              e.target.querySelector('.underline').style.width = '100%'
+              e.target.style.color = '#DAA520'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '100%'
             }} onMouseLeave={(e) => {
-              e.target.style.color = '#333'
-              e.target.querySelector('.underline').style.width = '0%'
+              e.target.style.color = '#F5DEB3'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '0%'
             }}>
               Home
               <span className="underline" style={{
@@ -105,27 +107,25 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #8B4513, #654321)',
+                background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
             </Link>
-            <a href="#about" onClick={(e) => {
-              e.preventDefault()
-              handleNavigation('/#about')
-            }} style={{
-              color: '#e7e3e0',
+            <Link to="/about" style={{
+              color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
-              cursor: 'pointer',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
               e.target.style.color = '#DAA520'
-              e.target.querySelector('.underline').style.width = '100%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '100%'
             }} onMouseLeave={(e) => {
               e.target.style.color = '#F5DEB3'
-              e.target.querySelector('.underline').style.width = '0%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '0%'
             }}>
               About
               <span className="underline" style={{
@@ -134,27 +134,25 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
+                background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
-            </a>
-            <a href="#products" onClick={(e) => {
-              e.preventDefault()
-              handleNavigation('/#products')
-            }} style={{
-              color: '#f4f0ed',
+            </Link>
+            <Link to="/products" style={{
+              color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
-              cursor: 'pointer',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
               e.target.style.color = '#DAA520'
-              e.target.querySelector('.underline').style.width = '100%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '100%'
             }} onMouseLeave={(e) => {
               e.target.style.color = '#F5DEB3'
-              e.target.querySelector('.underline').style.width = '0%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '0%'
             }}>
               Products
               <span className="underline" style={{
@@ -163,27 +161,25 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
+                background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
-            </a>
-            <a href="#team" onClick={(e) => {
-              e.preventDefault()
-              handleNavigation('/#team')
-            }} style={{
-              color: '#eae6e3',
+            </Link>
+            <Link to="/team" style={{
+              color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
-              cursor: 'pointer',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
               e.target.style.color = '#DAA520'
-              e.target.querySelector('.underline').style.width = '100%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '100%'
             }} onMouseLeave={(e) => {
               e.target.style.color = '#F5DEB3'
-              e.target.querySelector('.underline').style.width = '0%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '0%'
             }}>
               Team
               <span className="underline" style={{
@@ -192,27 +188,25 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #DAA520, #8B4513)',
+                background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
-            </a>
-            <a href="#testimonials" onClick={(e) => {
-              e.preventDefault()
-              handleNavigation('/#testimonials')
-            }} style={{
-              color: '#f1eae5',
+            </Link>
+            <Link to="/testimonials" style={{
+              color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
               textDecoration: 'none',
-              cursor: 'pointer',
               position: 'relative',
               padding: '0.5rem 0'
             }} onMouseEnter={(e) => {
               e.target.style.color = '#DAA520'
-              e.target.querySelector('.underline').style.width = '100%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '100%'
             }} onMouseLeave={(e) => {
               e.target.style.color = '#F5DEB3'
-              e.target.querySelector('.underline').style.width = '0%'
+              const underline = e.target.querySelector('.underline')
+              if (underline) underline.style.width = '0%'
             }}>
               Testimonials
               <span className="underline" style={{
@@ -221,16 +215,13 @@ function Header() {
                 left: 0,
                 width: '0%',
                 height: '2px',
-                background: 'linear-gradient(135deg, #8B4513, #654321)',
+                background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
-            </a>
+            </Link>
           </div>
 
-            <a href="#contact" onClick={(e) => {
-              e.preventDefault()
-              handleNavigation('/#contact')
-            }} style={{
+            <Link to="/contact" style={{
               display: window.innerWidth > 768 ? 'block' : 'none',
               background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
               color: '#000',
@@ -240,15 +231,14 @@ function Header() {
               borderRadius: '25px',
               boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
               transition: 'all 0.3s',
-              textDecoration: 'none',
-              cursor: 'pointer'
+              textDecoration: 'none'
             }} onMouseEnter={(e) => {
               e.target.style.transform = 'translateY(-2px)'
               e.target.style.boxShadow = '0 6px 20px rgba(212, 175, 55, 0.6)'
             }} onMouseLeave={(e) => {
               e.target.style.transform = 'translateY(0)'
               e.target.style.boxShadow = '0 4px 15px rgba(212, 175, 55, 0.4)'
-            }}>Contact ⚡</a>
+            }}>Contact</Link>
 
           <button style={{
             background: 'transparent',
@@ -290,27 +280,19 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => {
-                if (window.location.pathname === '/') {
-                  window.scrollTo({ top: 0, behavior: 'smooth' })
-                } else {
-                  navigate('/')
-                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100)
-                }
-                setMenuOpen(false)
-              }}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              }} onClick={() => handleNavigation('/')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Home
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',
-                color: '#f9f1ed',
+                color: '#8B4513',
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/#about')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(205, 40, 40, 0.1)'}
+              }} onClick={() => handleNavigation('/about')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 About
               </div>
@@ -320,8 +302,8 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/#products')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              }} onClick={() => handleNavigation('/products')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Products
               </div>
@@ -331,8 +313,8 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/#team')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              }} onClick={() => handleNavigation('/team')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Team
               </div>
@@ -342,8 +324,8 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/#testimonials')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              }} onClick={() => handleNavigation('/testimonials')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Testimonials
               </div>
@@ -353,10 +335,10 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/#contact')}
-              onMouseEnter={(e) => e.target.style.background = 'rgba(255, 255, 255, 0.1)'}
+              }} onClick={() => handleNavigation('/contact')}
+              onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
-                Contact ᥫ᭡
+                Contact
               </div>
             </div>
           </div>
