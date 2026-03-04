@@ -12,24 +12,24 @@ function Team() {
       image: 'https://via.placeholder.com/400x400/667eea/ffffff?text=CEO',
       description: 'With over 25 years of experience in the tobacco industry, Sankaraiah leads our company with vision and expertise. His deep understanding of global tobacco markets and commitment to quality has positioned Pammi Tobacco as a trusted name in the industry.'
     },
-    {
-      name: 'John Doe',
-      role: 'Co-Founder & COO',
-      image: 'https://via.placeholder.com/400x400/d4af37/ffffff?text=COO',
-      description: 'John brings extensive operational expertise to our organization. With a background in international trade and logistics, he ensures seamless operations and maintains our high standards of quality control across all product lines.'
-    },
-    {
-      name: 'Jane Smith',
-      role: 'Head of Quality Assurance',
-      image: 'https://via.placeholder.com/400x400/764ba2/ffffff?text=QA',
-      description: 'Jane oversees our quality assurance processes, ensuring every batch meets international standards. Her meticulous attention to detail and commitment to excellence guarantees that our clients receive only the finest tobacco products.'
-    },
-    {
-      name: 'Michael Brown',
-      role: 'Export Manager',
-      image: 'https://via.placeholder.com/400x400/f4d03f/333333?text=Export',
-      description: 'Michael manages our global export operations, coordinating with clients across 50+ countries. His expertise in international regulations and customer relations ensures smooth transactions and satisfied clients worldwide.'
-    }
+    // {
+    //   name: 'John Doe',
+    //   role: 'Co-Founder & COO',
+    //   image: 'https://via.placeholder.com/400x400/d4af37/ffffff?text=COO',
+    //   description: 'John brings extensive operational expertise to our organization. With a background in international trade and logistics, he ensures seamless operations and maintains our high standards of quality control across all product lines.'
+    // },
+    // {
+    //   name: 'Jane Smith',
+    //   role: 'Head of Quality Assurance',
+    //   image: 'https://via.placeholder.com/400x400/764ba2/ffffff?text=QA',
+    //   description: 'Jane oversees our quality assurance processes, ensuring every batch meets international standards. Her meticulous attention to detail and commitment to excellence guarantees that our clients receive only the finest tobacco products.'
+    // },
+    // {
+    //   name: 'Michael Brown',
+    //   role: 'Export Manager',
+    //   image: 'https://via.placeholder.com/400x400/f4d03f/333333?text=Export',
+    //   description: 'Michael manages our global export operations, coordinating with clients across 50+ countries. His expertise in international regulations and customer relations ensures smooth transactions and satisfied clients worldwide.'
+    // }
   ]
 
   return (

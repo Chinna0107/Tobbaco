@@ -192,7 +192,7 @@ function Header() {
                 transition: 'width 0.3s ease'
               }}></span>
             </Link>
-            <Link to="/testimonials" style={{
+            <Link to="/our-journey" style={{
               color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
@@ -208,7 +208,7 @@ function Header() {
               const underline = e.target.querySelector('.underline')
               if (underline) underline.style.width = '0%'
             }}>
-              Testimonials
+              Our Journey
               <span className="underline" style={{
                 position: 'absolute',
                 bottom: 0,
@@ -324,10 +324,10 @@ function Header() {
                 cursor: 'pointer',
                 transition: 'background 0.3s',
                 fontSize: '0.95rem'
-              }} onClick={() => handleNavigation('/testimonials')}
+              }} onClick={() => handleNavigation('/our-journey')}
               onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
-                Testimonials
+                Our Journey
               </div>
               <div style={{
                 padding: '0.8rem 1.5rem',

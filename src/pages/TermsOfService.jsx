@@ -11,7 +11,7 @@ function TermsOfService() {
           
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>1. Introduction and Acceptance</h2>
-            <p style={{ marginBottom: '1rem' }}>Welcome to Vengamamba Tobacco Company ("VTC," "we," "us," or "our"). These Terms of Service ("Terms") govern your use of our website vengamambatobacco.com and all related services, products, and communications.</p>
+            <p style={{ marginBottom: '1rem' }}>Welcome to Pammi Tobacco Traders ("PTT," "we," "us," or "our"). These Terms of Service ("Terms") govern your use of our website pammmitobbaco.com and all related services, products, and communications.</p>
             <div style={{ background: 'rgba(212, 175, 55, 0.1)', padding: '1rem', borderRadius: '10px', borderLeft: '4px solid #d4af37' }}>
               <strong style={{ color: '#d4af37' }}>Important Notice:</strong> By accessing or using our website, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
             </div>
@@ -19,7 +19,7 @@ function TermsOfService() {
 
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>2. Company Information</h2>
-            <p style={{ marginBottom: '0.5rem' }}><strong>Vengamamba Tobacco Company</strong></p>
+            <p style={{ marginBottom: '0.5rem' }}><strong>Pammi Tobacco Traders</strong></p>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               <li style={{ marginBottom: '0.5rem' }}>• Business Type: Tobacco Manufacturer & Exporter</li>
               <li style={{ marginBottom: '0.5rem' }}>• Registration: Licensed in India</li>
@@ -127,7 +127,7 @@ function TermsOfService() {
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>6. Intellectual Property Rights</h2>
             <h3 style={{ color: '#f4d03f', fontSize: '1.2rem', marginBottom: '0.8rem', fontWeight: '600' }}>6.1 Our Content</h3>
-            <p style={{ marginBottom: '1rem' }}>All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Vengamamba Tobacco Company or its licensors and is protected by copyright, trademark, and other intellectual property laws.</p>
+            <p style={{ marginBottom: '1rem' }}>All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Pammi Tobacco Traders or its licensors and is protected by copyright, trademark, and other intellectual property laws.</p>
 
             <h3 style={{ color: '#f4d03f', fontSize: '1.2rem', marginBottom: '0.8rem', fontWeight: '600' }}>6.2 Limited License</h3>
             <p style={{ marginBottom: '0.5rem' }}>You are granted a limited license to:</p>
@@ -169,7 +169,7 @@ function TermsOfService() {
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>8. Limitation of Liability</h2>
             <div style={{ background: 'rgba(255, 100, 100, 0.1)', padding: '1.5rem', borderRadius: '10px', border: '2px solid #ff6464', marginBottom: '1rem' }}>
               <p style={{ fontWeight: 'bold', color: '#ff6464', marginBottom: '1rem' }}>IMPORTANT LEGAL NOTICE</p>
-              <p style={{ marginBottom: '1rem' }}>TO THE FULLEST EXTENT PERMITTED BY LAW, VENGAMAMBA TOBACCO COMPANY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:</p>
+              <p style={{ marginBottom: '1rem' }}>TO THE FULLEST EXTENT PERMITTED BY LAW, Pammi TOBACCO COMPANY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:</p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '0.5rem' }}>• Loss of profits or business opportunities</li>
                 <li style={{ marginBottom: '0.5rem' }}>• Data loss or corruption</li>
@@ -183,7 +183,7 @@ function TermsOfService() {
 
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>9. Indemnification</h2>
-            <p style={{ marginBottom: '0.5rem' }}>You agree to indemnify, defend, and hold harmless Vengamamba Tobacco Company, its officers, directors, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising from or related to:</p>
+            <p style={{ marginBottom: '0.5rem' }}>You agree to indemnify, defend, and hold harmless Pammi Tobacco Traders, its officers, directors, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising from or related to:</p>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               <li style={{ marginBottom: '0.5rem' }}>• Your use of our website or services</li>
               <li style={{ marginBottom: '0.5rem' }}>• Your violation of these Terms</li>
@@ -228,15 +228,15 @@ function TermsOfService() {
 
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>13. Severability and Entire Agreement</h2>
-            <p>If any provision of these Terms is found to be unenforceable or invalid, the remaining provisions will continue in full force and effect. These Terms constitute the entire agreement between you and Vengamamba Tobacco Company regarding the use of our website.</p>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, the remaining provisions will continue in full force and effect. These Terms constitute the entire agreement between you and Pammi Tobacco Traders regarding the use of our website.</p>
           </section>
 
           <section style={{ marginBottom: '2rem' }}>
             <h2 style={{ color: '#d4af37', fontSize: 'clamp(1.3rem, 3vw, 1.6rem)', marginBottom: '1rem', fontWeight: 'bold' }}>14. Contact Information</h2>
             <p style={{ marginBottom: '1rem' }}>For questions about these Terms of Service, please contact us:</p>
             <div style={{ background: 'rgba(212, 175, 55, 0.1)', padding: '1.5rem', borderRadius: '10px', border: '1px solid #d4af37' }}>
-              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>Vengamamba Tobacco Company</p>
-              <p style={{ marginBottom: '0.5rem' }}>Email: vengamambatobaccocompany@gmail.com</p>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>Pammi Tobacco Traders</p>
+              <p style={{ marginBottom: '0.5rem' }}>Email: pammitobbaco@gmail.com</p>
               <p style={{ marginBottom: '0.5rem' }}>Phone: +91 9440522573</p>
               <p style={{ marginBottom: '0.5rem' }}>Phone (US): +1 774 525 4591</p>
               <p style={{ marginBottom: '0.5rem' }}>Address: Guntur - 522001, Andhra Pradesh, INDIA</p>
@@ -246,7 +246,7 @@ function TermsOfService() {
 
           <section style={{ background: 'rgba(212, 175, 55, 0.15)', padding: '1.5rem', borderRadius: '10px', border: '2px solid #d4af37', textAlign: 'center' }}>
             <h3 style={{ color: '#d4af37', fontSize: '1.3rem', marginBottom: '1rem', fontWeight: 'bold' }}>Acknowledgment</h3>
-            <p>By using our website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing Vengamamba Tobacco Company as your trusted tobacco partner.</p>
+            <p>By using our website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing Pammi Tobacco Traders as your trusted tobacco partner.</p>
           </section>
 
         </div>

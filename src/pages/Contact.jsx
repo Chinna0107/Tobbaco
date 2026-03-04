@@ -293,9 +293,9 @@ function Contact() {
               }}>Contact Information</h2>
               
               {[
-                { icon: '📧', title: 'Email', info: ['info@pammitobacco.com', 'sales@pammitobacco.com'] },
-                { icon: '📞', title: 'Phone', info: ['+1 (555) 123-4567', '+1 (555) 987-6543'] },
-                { icon: '📍', title: 'Address', info: ['Andhra Pradesh', 'India'] },
+                { icon: '📧', title: 'Email', info: ['info@pammitobacco.com'] },
+                { icon: '📞', title: 'Phone', info: ['+91 8499934357', '+1 972-388-1934'] },
+                { icon: '📍', title: 'Address', info: ['2-131, Near Community Hall', 'Konijedu Village, Prakasam District'] },
                 { icon: '🕒', title: 'Business Hours', info: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 2:00 PM'] }
               ].map((item, i) => (
                 <div key={i} style={{
@@ -328,148 +328,65 @@ function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Map Section */}
       <section style={{
         padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))'
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
-            fontWeight: 'bold',
-            marginBottom: 'clamp(1rem, 3vw, 2rem)',
-            textAlign: 'center',
-            background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>Frequently Asked Questions</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {[
-              { q: 'What types of tobacco do you supply?', a: 'We specialize in Flue Cured Virginia tobacco and Burley tobacco, offering various grades to meet international standards.' },
-              { q: 'Do you ship internationally?', a: 'Yes, we export to clients worldwide. Contact us for specific shipping details and requirements for your region.' },
-              { q: 'What is your minimum order quantity?', a: 'Minimum order quantities vary by product type. Please contact our sales team for detailed information.' },
-              { q: 'How can I request a quote?', a: 'Fill out the contact form above with your requirements, or email us directly at sales@pammitobacco.com.' },
-              { q: 'What certifications do you have?', a: 'We maintain all necessary quality certifications and comply with international tobacco trading standards.' }
-            ].map((faq, i) => (
-              <div key={i} style={{
-                background: 'rgba(139, 69, 19, 0.05)',
-                backdropFilter: 'blur(20px)',
-                borderRadius: '15px',
-                padding: 'clamp(1.5rem, 3vw, 2rem)',
-                border: '1px solid rgba(139, 69, 19, 0.2)',
-                transition: 'all 0.3s'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'
-                e.currentTarget.style.border = '1px solid rgba(212, 175, 55, 0.3)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'
-                e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)'
-              }}>
-                <h3 style={{
-                  fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
-                  fontWeight: 'bold',
-                  marginBottom: '0.8rem',
-                  color: '#d4af37'
-                }}>❓ {faq.q}</h3>
-                <p style={{
-                  color: '#555',
-                  lineHeight: '1.6',
-                  fontSize: 'clamp(0.9rem, 2vw, 1rem)'
-                }}>{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Social Media & Map Section */}
-      <section style={{
-        padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))'
+        background: 'linear-gradient(135deg, rgba(250, 250, 250, 1), rgba(255, 255, 255, 1))'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{
             fontSize: 'clamp(2rem, 5vw, 2.5rem)',
             fontWeight: 'bold',
-            marginBottom: 'clamp(2rem, 4vw, 3rem)',
+            marginBottom: '2rem',
             textAlign: 'center',
             background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
-          }}>Connect With Us</h2>
-          
-          {/* Social Media Links */}
+          }}>Find Us Here</h2>
           <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: 'clamp(1rem, 3vw, 2rem)',
-            marginBottom: 'clamp(2rem, 4vw, 3rem)',
-            flexWrap: 'wrap'
-          }}>
-            {[
-              { name: 'LinkedIn', icon: '👥', color: '#0077B5' },
-              { name: 'WhatsApp', icon: '📱', color: '#25D366' },
-              { name: 'Email', icon: '✉️', color: '#d4af37' },
-              { name: 'Phone', icon: '📞', color: '#4CAF50' }
-            ].map((social, i) => (
-              <div key={i} style={{
-                background: 'rgba(139, 69, 19, 0.05)',
-                backdropFilter: 'blur(20px)',
-                padding: 'clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2rem)',
-                borderRadius: '15px',
-                border: '1px solid rgba(139, 69, 19, 0.2)',
-                cursor: 'pointer',
-                transition: 'all 0.3s',
-                textAlign: 'center',
-                minWidth: 'clamp(120px, 20vw, 150px)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)'
-                e.currentTarget.style.boxShadow = `0 10px 30px ${social.color}40`
-                e.currentTarget.style.border = `1px solid ${social.color}80`
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = 'none'
-                e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)'
-              }}>
-                <div style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', marginBottom: '0.5rem' }}>{social.icon}</div>
-                <div style={{ color: '#8B4513', fontSize: 'clamp(0.9rem, 2vw, 1rem)', fontWeight: '600' }}>{social.name}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Map Placeholder */}
-          <div style={{
-            background: 'rgba(139, 69, 19, 0.05)',
-            backdropFilter: 'blur(20px)',
             borderRadius: '20px',
-            padding: 'clamp(2rem, 4vw, 3rem)',
-            border: '1px solid rgba(139, 69, 19, 0.2)',
-            textAlign: 'center'
+            overflow: 'hidden',
+            boxShadow: '0 8px 32px rgba(139, 69, 19, 0.2)',
+            border: '2px solid rgba(212, 175, 55, 0.3)'
           }}>
-            <div style={{
-              background: 'rgba(212, 175, 55, 0.1)',
-              borderRadius: '15px',
-              padding: 'clamp(3rem, 6vw, 5rem)',
-              border: '2px dashed rgba(212, 175, 55, 0.3)'
-            }}>
-              <div style={{ fontSize: 'clamp(3rem, 6vw, 4rem)', marginBottom: '1rem' }}>🗺️</div>
-              <h3 style={{
-                fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
-                fontWeight: 'bold',
-                marginBottom: '0.5rem',
-                color: '#d4af37'
-              }}>Our Location</h3>
-              <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
-                Guntur - 522001, Andhra Pradesh, India
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.8!2d79.8!3d15.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQyJzAwLjAiTiA3OcKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Pammi Tobacco Traders Location"
+            ></iframe>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <a
+              href="https://maps.app.goo.gl/62T5Lhem8LyuXNzPA"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                padding: '1rem 2rem',
+                background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
+                color: '#000',
+                textDecoration: 'none',
+                borderRadius: '30px',
+                fontWeight: '700',
+                fontSize: '1rem',
+                boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
+                transition: 'transform 0.3s'
+              }}
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+            >
+              🗺️ Open in Google Maps
+            </a>
           </div>
         </div>
       </section>
+
+
     </div>
   )
 }

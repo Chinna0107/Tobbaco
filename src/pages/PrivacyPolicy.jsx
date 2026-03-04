@@ -37,10 +37,10 @@ function PrivacyPolicy() {
             margin: '0 auto 1rem',
             color: '#333'
           }}>
-            Pammi Tobacco Company (VTC) - Protecting Your Privacy
+            Pammi Tobacco Traders (PTT) - Protecting Your Privacy
           </p>
           <p style={{ color: '#666', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
-            Last Updated: January 22, 2025
+            Last Updated: March , 2026
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ function PrivacyPolicy() {
                 color: '#d4af37'
               }}>1. Introduction</h2>
               <p style={{ color: '#333', lineHeight: '1.8', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
-                Pammi Tobacco Company ("PTC," "we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website pammitobbaco.com and use our services.
+                Pammi Tobacco Traders ("PTT," "we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website pammitobbaco.com and use our services.
               </p>
             </div>
 

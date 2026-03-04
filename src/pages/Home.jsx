@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { FaStar, FaGlobe, FaUsers, FaAward } from 'react-icons/fa'
 import logo from '../assets/Logo.jpeg'
-import screenshot from '../assets/Screen.png'
+
+const tobaccoImage = 'https://www.sopariwala.com/wp-content/uploads/2024/12/BLACK-CHOPADIA-TOBACCO-THUMBNAIL-new-copy.jpg'
 
 function Home() {
   return (
@@ -60,7 +61,8 @@ function Home() {
             textShadow: '1px 1px 4px rgba(0,0,0,0.5)',
             padding: '0 1rem'
           }}>
-            Leading manufacturer and exporter of high-quality flue cured Virginia tobacco and burley tobacco. Your trusted partner for premium tobacco products worldwide.
+            {/* Leading manufacturer and exporter of high-quality flue cured Virginia tobacco and burley tobacco. Your trusted partner for premium tobacco products worldwide. */}
+            From Indian fields to Global Markets.
           </p>
           
           <div className="hero-buttons" style={{
@@ -157,7 +159,7 @@ function Home() {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             letterSpacing: '-1px'
-          }}>About Pammi Tobacco Company</h2>
+          }}>About Pammi Tobacco Traders</h2>
           <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: '#654321', marginBottom: 'clamp(2rem, 5vw, 3rem)', textAlign: 'center', fontWeight: '500' }}>
             Your trusted partner in premium tobacco trading with a legacy of excellence spanning over two decades
           </p>
@@ -178,7 +180,7 @@ function Home() {
               justifyContent: 'center',
               textAlign: 'center'
             }}>
-              <img src={logo} alt="Pammi Tobacco Company" style={{
+              <img src={logo} alt="Pammi Tobacco Traders" style={{
                 width: '100%',
                 maxWidth: '250px',
                 height: 'auto',
@@ -188,7 +190,7 @@ function Home() {
                 boxShadow: '0 10px 40px rgba(212, 175, 55, 0.3)'
               }} />
               <h3 style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: '800', marginBottom: '0.5rem', color: '#8B4513' }}>Pammi Tobacco</h3>
-              <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: '#d4af37', fontWeight: '700', fontStyle: 'italic' }}>Premium Excellence Since 1998</p>
+              <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: '#d4af37', fontWeight: '700', fontStyle: 'italic' }}>Premium Excellence Since 1930</p>
             </div>
 
             {/* Description - Right Side */}
@@ -202,13 +204,13 @@ function Home() {
             }}>
               <div style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.05rem)', lineHeight: '1.8', color: '#654321', fontWeight: '400' }}>
                 <p style={{ marginBottom: '1rem' }}>
-                  Pammi Tobacco Company (PTC) is a trusted dealer, supplier, and exporter of high-quality leaf tobacco. With years of expertise in the tobacco industry, we specialize in sourcing, processing, and delivering premium-grade tobacco to global markets.
+                  Pammi Tobacco Traders (PTT) is a trusted dealer, supplier, and exporter of high-quality leaf tobacco. With years of expertise in the tobacco industry, we specialize in sourcing, processing, and delivering premium-grade tobacco to global markets.
                 </p>
                 <p style={{ marginBottom: '1rem' }}>
                   Our commitment to excellence, integrity, and customer satisfaction has positioned us as a reliable partner for tobacco importers, manufacturers, and distributors worldwide.
                 </p>
                 <p>
-                  At PTC, we take pride in offering a wide range of unmanufactured Virginia Flue-Cured Tobacco, meticulously graded to meet the diverse needs of our international clientele.
+                  At PTT, we take pride in offering a wide range of unmanufactured Virginia Flue-Cured Tobacco, meticulously graded to meet the diverse needs of our international clientele.
                 </p>
               </div>
             </div>
@@ -223,7 +225,7 @@ function Home() {
             border: '1px solid rgba(139, 69, 19, 0.2)',
             boxShadow: '0 8px 32px rgba(139, 69, 19, 0.15)'
           }}>
-            <h3 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.2rem)', fontWeight: '800', marginBottom: 'clamp(2rem, 4vw, 3rem)', textAlign: 'center', background: 'linear-gradient(135deg, #8B4513, #d4af37)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Why Choose PTC?</h3>
+            <h3 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.2rem)', fontWeight: '800', marginBottom: 'clamp(2rem, 4vw, 3rem)', textAlign: 'center', background: 'linear-gradient(135deg, #8B4513, #d4af37)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Why Choose PTT?</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'clamp(1.5rem, 3vw, 2rem)' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                 <img src="https://venkatasaitobacco.com/assets/images/leaf/02.jpg" alt="Quality" style={{ width: '200px', height: '200px', borderRadius: '20px', marginBottom: '1rem', border: '3px solid rgba(212, 175, 55, 0.5)', boxShadow: '0 8px 25px rgba(212, 175, 55, 0.3)', objectFit: 'cover' }} />
@@ -409,168 +411,6 @@ function Home() {
                     Learn More →
                   </Link>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section id="team" style={{
-        padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
-            fontWeight: 'bold',
-            marginBottom: '1rem',
-            textAlign: 'center',
-            background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>Our Expert Team</h2>
-          <p style={{ textAlign: 'center', color: '#555', marginBottom: 'clamp(3rem, 5vw, 4rem)', fontSize: 'clamp(1rem, 2.5vw, 1.2rem)' }}>
-            Meet the professionals behind our success
-          </p>
-          
-          {[
-            { name: 'Sankaraiah Nadendla', role: 'CEO & Founder', image: 'https://filmfare.wwmindia.com/content/2025/may/jrntrbirthdaystory21747721171.jpg', desc: 'With over 25 years of experience in the tobacco industry, Sankaraiah leads our company with vision and expertise. His deep understanding of global tobacco markets has positioned Pammi Tobacco as a trusted name worldwide.' },
-            { name: 'John Doe', role: 'Co-Founder & COO', image: 'https://filmfare.wwmindia.com/content/2025/may/jrntrbirthdaystory21747721171.jpg', desc: 'John brings extensive operational expertise to our organization. With a background in international trade and logistics, he ensures seamless operations and maintains our high standards of quality control.' },
-            { name: 'Jane Smith', role: 'Head of Quality Assurance', image: 'https://filmfare.wwmindia.com/content/2025/may/jrntrbirthdaystory21747721171.jpg', desc: 'Jane oversees our quality assurance processes, ensuring every batch meets international standards. Her meticulous attention to detail guarantees that our clients receive only the finest tobacco products.' }
-          ].map((member, index) => (
-            <div key={index} style={{
-              display: 'grid',
-              gridTemplateColumns: window.innerWidth > 768 ? '1fr 1fr' : '1fr',
-              gap: 'clamp(2rem, 4vw, 3rem)',
-              alignItems: 'center',
-              marginBottom: 'clamp(3rem, 5vw, 4rem)',
-              background: 'rgba(139, 69, 19, 0.05)',
-              backdropFilter: 'blur(20px)',
-              borderRadius: '20px',
-              padding: 'clamp(2rem, 4vw, 3rem)',
-              border: '1px solid rgba(139, 69, 19, 0.2)',
-              boxShadow: '0 8px 32px rgba(139, 69, 19, 0.15)',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-10px)'
-              e.currentTarget.style.boxShadow = '0 15px 50px rgba(212, 175, 55, 0.4)'
-              e.currentTarget.style.border = '1px solid rgba(212, 175, 55, 0.5)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)'
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)'
-              e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
-              {/* Image */}
-              <div style={{ order: window.innerWidth > 768 && index % 2 !== 0 ? 2 : 1 }}>
-                <img 
-                  src={member.image} 
-                  alt={member.name}
-                  style={{
-                    width: '100%',
-                    maxWidth: '350px',
-                    height: 'auto',
-                    aspectRatio: '1/1',
-                    objectFit: 'cover',
-                    borderRadius: '20px',
-                    border: '3px solid rgba(212, 175, 55, 0.5)',
-                    boxShadow: '0 10px 40px rgba(212, 175, 55, 0.3)',
-                    margin: '0 auto',
-                    display: 'block'
-                  }}
-                />
-              </div>
-
-              {/* Description */}
-              <div style={{ order: window.innerWidth > 768 && index % 2 !== 0 ? 1 : 2 }}>
-                <h3 style={{
-                  fontSize: 'clamp(1.5rem, 4vw, 2rem)',
-                  fontWeight: 'bold',
-                  marginBottom: '0.5rem',
-                  background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}>{member.name}</h3>
-                <p style={{
-                  fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
-                  color: '#f4d03f',
-                  fontWeight: '600',
-                  marginBottom: '1rem'
-                }}>{member.role}</p>
-                <p style={{
-                  fontSize: 'clamp(0.95rem, 2vw, 1.05rem)',
-                  lineHeight: '1.8',
-                  color: '#333'
-                }}>{member.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section id="testimonials" style={{
-        padding: 'clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem)',
-        background: 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 1))',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
-            fontWeight: 'bold',
-            marginBottom: '1rem',
-            textAlign: 'center',
-            background: 'linear-gradient(135deg, #d4af37, #f4d03f)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>Client Testimonials</h2>
-          <p style={{ textAlign: 'center', color: '#555', marginBottom: 'clamp(2rem, 5vw, 3rem)', fontSize: 'clamp(1rem, 2.5vw, 1.2rem)' }}>
-            What our clients say about us
-          </p>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: 'clamp(1.5rem, 3vw, 2rem)'
-          }}>
-            {[
-              { name: 'David Wilson', company: 'Global Tobacco Inc.', text: 'Exceptional quality and reliable service. Pammi Tobacco has been our trusted partner for over 5 years.', rating: 5 },
-              { name: 'Maria Garcia', company: 'Euro Leaf Trading', text: 'Outstanding product quality and timely deliveries. Highly recommend their Virginia tobacco range.', rating: 5 },
-              { name: 'Ahmed Hassan', company: 'Middle East Tobacco', text: 'Professional team and premium grade tobacco. Their expertise in the industry is unmatched.', rating: 5 }
-            ].map((testimonial, i) => (
-              <div key={i} style={{
-                background: 'rgba(139, 69, 19, 0.05)',
-                backdropFilter: 'blur(20px)',
-                WebkitBackdropFilter: 'blur(20px)',
-                borderRadius: '20px',
-                padding: 'clamp(1.5rem, 3vw, 2rem)',
-                border: '1px solid rgba(139, 69, 19, 0.2)',
-                boxShadow: '0 8px 32px rgba(139, 69, 19, 0.15)',
-                transition: 'transform 0.3s, box-shadow 0.3s'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-10px)'
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(212, 175, 55, 0.3)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)'
-              }}>
-                <div style={{ marginBottom: '1rem' }}>
-                  {[...Array(testimonial.rating)].map((_, j) => (
-                    <span key={j} style={{ color: '#d4af37', fontSize: 'clamp(1rem, 2.5vw, 1.2rem)' }}>★</span>
-                  ))}
-                </div>
-                <p style={{ color: '#333', lineHeight: '1.6', marginBottom: '1.5rem', fontSize: 'clamp(0.9rem, 2vw, 1rem)', fontStyle: 'italic' }}>
-                  "{testimonial.text}"
-                </p>
-                <h4 style={{ color: '#d4af37', fontWeight: 'bold', marginBottom: '0.3rem', fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>{testimonial.name}</h4>
-                <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: 'clamp(0.85rem, 2vw, 0.9rem)' }}>{testimonial.company}</p>
               </div>
             ))}
           </div>
