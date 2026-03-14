@@ -459,12 +459,13 @@ function Home() {
               <div style={{ textAlign: 'center', padding: 'clamp(1rem, 2vw, 1.5rem)' }}>
                 <div style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '0.5rem' }}>📞</div>
                 <h3 style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', fontWeight: 'bold', marginBottom: '0.5rem', color: '#d4af37' }}>Phone</h3>
-                <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>+1 (555) 123-4567</p>
+                <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>+1 972-388-1934</p>
               </div>
               <div style={{ textAlign: 'center', padding: 'clamp(1rem, 2vw, 1.5rem)' }}>
                 <div style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '0.5rem' }}>📍</div>
                 <h3 style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', fontWeight: 'bold', marginBottom: '0.5rem', color: '#d4af37' }}>Location</h3>
                 <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>Andhra Pradesh, India</p>
+                <p style={{ color: '#555', fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>Lincolnshire , Illinois , USA</p>
               </div>
             </div>
             <div style={{ textAlign: 'center' }}>

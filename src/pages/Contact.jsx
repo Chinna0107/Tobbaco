@@ -11,7 +11,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Send via WhatsApp
-    const phone = '918179860935' // WhatsApp number with country code
+    const phone = '19723881934' // WhatsApp number with country code
     const text = `Hello! I'm ${formData.name}%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone || 'Not provided'}%0ACompany: ${formData.company || 'Not provided'}%0ASubject: ${formData.subject}%0A%0AMessage:%0A${formData.message}`
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank')
     
@@ -294,9 +294,11 @@ function Contact() {
               
               {[
                 { icon: '📧', title: 'Email', info: ['info@pammitobacco.com'] },
-                { icon: '📞', title: 'Phone', info: ['+91 8499934357', '+1 972-388-1934'] },
+                { icon: '📞', title: 'Phone', info: ['+91 8499934357'] },
+                { icon: '💬', title: 'WhatsApp', info: ['+1 972-388-1934'], whatsapp: '19723881934' },
                 { icon: '📍', title: 'Address', info: ['2-131, Near Community Hall', 'Konijedu Village, Prakasam District'] },
-                { icon: '🕒', title: 'Business Hours', info: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 2:00 PM'] }
+                { icon: '📍', title: 'Location', info: ['1 Overlook Point , STE 653 , Lincolnshire , Illinois , 60069'] },
+                { icon: '🕒', title: 'Business Hours', info: ['Mon - Fri: 9:00 AM - 6:00 PM'] }
               ].map((item, i) => (
                 <div key={i} style={{
                   paddingBottom: i < 3 ? 'clamp(1rem, 2vw, 1.2rem)' : '0',
@@ -313,12 +315,9 @@ function Contact() {
                   </div>
                   <div style={{ paddingLeft: 'clamp(2.3rem, 5vw, 2.6rem)' }}>
                     {item.info.map((line, j) => (
-                      <p key={j} style={{
-                        color: '#333',
-                        fontSize: 'clamp(0.85rem, 1.8vw, 0.95rem)',
-                        margin: '0.2rem 0',
-                        lineHeight: '1.5'
-                      }}>{line}</p>
+                      item.whatsapp
+                        ? <a key={j} href={`https://wa.me/${item.whatsapp}`} target="_blank" rel="noopener noreferrer" style={{ display: 'block', color: '#25D366', fontSize: 'clamp(0.85rem, 1.8vw, 0.95rem)', margin: '0.2rem 0', lineHeight: '1.5', textDecoration: 'none', fontWeight: '600' }}>📱 {line}</a>
+                        : <p key={j} style={{ color: '#333', fontSize: 'clamp(0.85rem, 1.8vw, 0.95rem)', margin: '0.2rem 0', lineHeight: '1.5' }}>{line}</p>
                     ))}
                   </div>
                 </div>

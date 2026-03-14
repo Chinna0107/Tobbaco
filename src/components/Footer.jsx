@@ -85,7 +85,7 @@ function Footer() {
             { path: '/', label: 'Home' },
             { path: '/about', label: 'About' },
             { path: '/products', label: 'Products' },
-            { path: '/team', label: 'Team' },
+            // { path: '/team', label: 'Team' },
             { path: '/our-journey', label: 'Our Journey' },
             { path: '/contact', label: 'Contact' }
           ].map((item, i) => (
@@ -140,6 +140,12 @@ function Footer() {
           <p style={{ marginBottom: '0.5rem', color: '#E8D4B0', fontSize: '0.9rem', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = '#f4d03f'} onMouseLeave={(e) => e.target.style.color = '#E8D4B0'}>
             📍 2-131, Near Community Hall, Konijedu Village, Prakasam District
           </p>
+          {/* <p style={{ marginBottom: '0.5rem', color: '#E8D4B0', fontSize: '0.9rem', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = '#f4d03f'} onMouseLeave={(e) => e.target.style.color = '#E8D4B0'}>
+            📍 2-131, Near Community Hall, Konijedu Village, Prakasam District
+          </p> */}
+          <p style={{ marginBottom: '0.5rem', color: '#E8D4B0', fontSize: '0.9rem', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = '#f4d03f'} onMouseLeave={(e) => e.target.style.color = '#E8D4B0'}>
+            📍 1 Overlook Point , STE 653 , Lincolnshire , Illinois , 60069
+          </p>
 
           <p style={{ marginBottom: '0.5rem', color: '#DAA520', fontSize: '0.9rem', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = '#f4d03f'} onMouseLeave={(e) => e.target.style.color = '#DAA520'}>
             📞 <a href="tel:+918499934357" style={{ color: 'inherit', textDecoration: 'none' }}>+91 8499934357</a>
@@ -154,7 +160,7 @@ function Footer() {
           </p>
 
           <p style={{ color: '#F5DEB3', fontSize: '0.9rem', marginBottom: '1rem' }}>
-            🕒 Mon-Fri: 9AM-6PM IST
+            🕒 Mon-Fri: 9AM-6PM IST & CST
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>

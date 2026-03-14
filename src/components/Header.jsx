@@ -165,7 +165,7 @@ function Header() {
                 transition: 'width 0.3s ease'
               }}></span>
             </Link>
-            <Link to="/team" style={{
+            {/* <Link to="/team" style={{
               color: '#F5DEB3',
               fontSize: '1rem',
               fontWeight: '600',
@@ -191,7 +191,7 @@ function Header() {
                 background: 'linear-gradient(135deg, #DAA520, #F5DEB3)',
                 transition: 'width 0.3s ease'
               }}></span>
-            </Link>
+            </Link> */}
             <Link to="/our-journey" style={{
               color: '#F5DEB3',
               fontSize: '1rem',
@@ -307,7 +307,7 @@ function Header() {
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Products
               </div>
-              <div style={{
+              {/* <div style={{
                 padding: '0.8rem 1.5rem',
                 color: '#8B4513',
                 cursor: 'pointer',
@@ -317,7 +317,7 @@ function Header() {
               onMouseEnter={(e) => e.target.style.background = 'rgba(139, 69, 19, 0.1)'}
               onMouseLeave={(e) => e.target.style.background = 'transparent'}>
                 Team
-              </div>
+              </div> */}
               <div style={{
                 padding: '0.8rem 1.5rem',
                 color: '#8B4513',
